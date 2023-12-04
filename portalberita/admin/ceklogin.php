@@ -40,6 +40,7 @@ if (isset($_POST['submit'])) {
           // document.location.href = './?mod=berita';
   }
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -49,7 +50,7 @@ if (isset($_POST['submit'])) {
   <title>Login</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="../assets/style.css">
-  <link rel="icon" type="image/png" href="../icon.png" sizes="196x196" />
+  
 </head>
 
 <body>
@@ -71,6 +72,8 @@ if (isset($_POST['submit'])) {
               <div class="custom-control custom-checkbox mb-1 mt-1">
               </div>
               <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit" name="submit">Sign in</button>
+              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit" name="signup"><a href="signup.php" style="color: white; text-decoration: none">Signup</a></button>
+              
             </form>
           </div>
         </div>
