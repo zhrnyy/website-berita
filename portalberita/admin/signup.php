@@ -79,8 +79,9 @@ if (isset($_GET['act']) && $_GET['act'] =='hapus') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../assets/style.css">
+  <link rel="stylesheet" type="text/css" href="../assets/style.css">
 </head>
+
 <body>
 <div class="container">
     <div class="row">
@@ -91,27 +92,27 @@ if (isset($_GET['act']) && $_GET['act'] =='hapus') {
 				<form class="form-signin" action="" method="POST">
 					<input type="hidden" name="userid" value="<?php if (isset($_GET['act']) && $_GET['act'] =='edit') { echo $id; } ?>">
 					<div class="form-label-group">
-						<label for="email">Email</label>
-						<input type="text" id="email" value="<?php if (isset($_GET['act']) && $_GET['act'] =='edit') { echo $email; } ?>" name="email" class="form-control" placeholder="Email Address" required autofocus>
+						<input type="text" id="email" class="form-control" name="email" placeholder="Alamat Email" value="<?php if (isset($_GET['act']) && $_GET['act'] =='edit') { echo $email; } ?>" required autofocus>
+						<label for="email">Alamat Email</label>
 					</div>
 					<div class="form-label-group">
-						<label for="nama">Nama Lengkap</label>
 						<input type="text" id="nama" value="<?php if (isset($_GET['act']) && $_GET['act'] =='edit') { echo $nama; } ?>" name="nama" class="form-control" placeholder="Nama Lengkap" required>
+						<label for="nama">Nama Lengkap</label>
 					</div>
 					<div class="form-label-group">
-						<label for="username">Username</label>
 						<input type="text" id="username" value="<?php if (isset($_GET['act']) && $_GET['act'] =='edit') { echo $username; } ?>" name="username" class="form-control" placeholder="Username" required>
+						<label for="username">Username</label>
 					</div>
 					<div class="form-label-group">
-						<label for="password">Password</label>
 						<input type="text" id="password" value="<?php if (isset($_GET['act']) && $_GET['act'] =='edit') { echo $password; } ?>" name="password" class="form-control" placeholder="Password" required>
+						<label for="password">Password</label>
 					</div>
 					
 					<div class="custom-control custom-checkbox mb-1 mt-1"></div>
-						<button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit"
+					<button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit"
 						name="<?=(isset($id) ? 'edituser' : 'tambahuser')?>"> <?=(isset($id) ? 'EDIT' : 'TAMBAH')?> </button>
 
-						<br><p class="form-signin">Sudah Punya Akun? <a href="ceklogin.php">Login</a></p>
+					<br><p class="form-signin">Sudah Punya Akun? <a href="ceklogin.php">Login</a></p>
 
   					</div>
 				</form>
