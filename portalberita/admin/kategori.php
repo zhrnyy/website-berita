@@ -63,6 +63,7 @@ if (isset($_GET['act']) && $_GET['act'] == 'hapus') {
 
 
 <form class="text-left" action="./?mod=kategori" method="POST">
+	<h1 style="text-align: center;">Tambah kategori</h1>
 	<fieldset class="border p-2">
 		<legend  class="w-auto">Tambah Kategori</legend>
 		<div class="form-group">

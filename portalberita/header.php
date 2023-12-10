@@ -17,7 +17,7 @@ global $connect;
   <title><?php echo ambilprofilweb('title_site'); ?></title>
   <!-- Bootstrap core CSS -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="icon" type="image/png" href="icon.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="icon.png" sizes="150x150" />
   <!-- Custom styles for this template -->
   <link href="assets/blog-home.css" rel="stylesheet">
 </head>
@@ -26,7 +26,7 @@ global $connect;
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light bg-transparent position-static" style="margin-top: -55px;">
     <div class="container">
-      <img class="navbar-brand" src="image/logo.png">
+      <img class="navbar-brand" src="image/logo.png" width="100px">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -35,6 +35,7 @@ global $connect;
           <li class="nav-item">
             <a class="nav-link" href="./">Home</a>
           </li>
+          
           <!-- Ambil Kategori Dari Database -->
           <!-- konfigurasi pagination -->
           <?php 
@@ -59,6 +60,9 @@ global $connect;
             <a class="nav-link" href="./?open=cat&id=<?= $row['ID']; ?>"><?= $row['kategori']; ?></a>
           </li>
           <?php endwhile; ?>
+          <li class="nav-item">
+            <a class="nav-link" href="admin/ceklogin.php">Login</a>
+          </li>
         </ul>
       </div>
     </div>

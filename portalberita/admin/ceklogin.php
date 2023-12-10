@@ -72,8 +72,7 @@ if (isset($_POST['submit'])) {
               <div class="custom-control custom-checkbox mb-1 mt-1">
               </div>
               <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit" name="submit">Sign in</button>
-              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit" name="signup"><a href="signup.php" style="color: white; text-decoration: none">Signup</a></button>
-              
+              <button class="btn btn-lg btn-primary btn-block text-uppercase mt-3" onclick="window.location.href='signup.php'">Sign Up</button>              
             </form>
           </div>
         </div>

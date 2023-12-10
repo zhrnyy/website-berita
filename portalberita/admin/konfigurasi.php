@@ -92,7 +92,7 @@ if (isset($_POST['uploadicon'])) {
 				alert('Format Gambar harus png');
 			  </script>";
 	} else {
-		move_uploaded_file($tmpName, '../'.'icon.png');
+		move_uploaded_file($tmpName, '../image/'.'icon.png');
 	}
 }
 
