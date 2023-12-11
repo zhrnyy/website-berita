@@ -38,15 +38,14 @@ if(!isset($_SESSION["login"])) {
 <body>
 <header>
 <div class="navbar-dark navbar bg-primary fixed-top">
-    <div class="container">
-        <a class="navbar-brand" href="#">PORTAL BERITA</a>
-        </div>
-    </div>
+  <div class="container">
+    <a class="navbar-brand" href="#">PORTAL BERITA</a>
+  </div>
 </div>
 </header>
 
 <section>
-  <nav class="bg-primary">
+  <nav style="background-color: #87C4FF;">
     <div class="container">
     <ul>
       <li><a class="nav-link text-light" href="./">Home</a></li>
@@ -68,14 +67,14 @@ if(!isset($_SESSION["login"])) {
     					include("useradmin.php");
     					break;
     				case 'konfigurasi':
-                        include("konfigurasi.php");
-                        break;
-                    case 'kategori':
-                        include("kategori.php");
-                        break;
-                    case 'berita':
-                        include("berita.php");
-                        break;
+              include("konfigurasi.php");
+              break;
+            case 'kategori':
+              include("kategori.php");
+              break;
+            case 'berita':
+              include("berita.php");
+              break;
     				default:
     					echo "Selamat Datang " . $_SESSION['nama']. " ";
     					break;

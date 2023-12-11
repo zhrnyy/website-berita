@@ -79,17 +79,18 @@ if (isset($_GET['act']) && $_GET['act'] =='hapus') {
 
 <form class="text-left" action="" method="POST">
 	<input type="hidden" name="userid" value="<?php if (isset($_GET['act']) && $_GET['act'] =='edit') { echo $id; } ?>">
+	<h1 style="text-align: center;">Halaman user</h1>
 	<fieldset class="border p-2">
 		<legend  class="w-auto">TAMBAH DATA</legend>
 	<div class="form-group">
     <label>Email</label>
-    <input type="text" value="<?php if (isset($_GET['act']) && $_GET['act'] =='edit') { echo $email; } ?>" name="email" class="form-control col-6" placeholder="Email Address" required>
+    <input type="text" value="<?php if (isset($_GET['act']) && $_GET['act'] =='edit') { echo $email; } ?>" name="email" class="form-control col-6" required>
     <label>Nama User</label>
-    <input type="text" value="<?php if (isset($_GET['act']) && $_GET['act'] =='edit') { echo $nama; } ?>" name="nama" class="form-control col-6" placeholder="Nama Lengkap" required>
+    <input type="text" value="<?php if (isset($_GET['act']) && $_GET['act'] =='edit') { echo $nama; } ?>" name="nama" class="form-control col-6" required>
     <label>Username</label>
-    <input type="text" value="<?php if (isset($_GET['act']) && $_GET['act'] =='edit') { echo $username; } ?>" name="username" class="form-control col-6" placeholder="Username" required>
+    <input type="text" value="<?php if (isset($_GET['act']) && $_GET['act'] =='edit') { echo $username; } ?>" name="username" class="form-control col-6" required>
     <label>Password</label>
-    <input type="text" value="<?php if (isset($_GET['act']) && $_GET['act'] =='edit') { echo $password; } ?>" name="password" class="form-control col-6" placeholder="Password" required>
+    <input type="text" value="<?php if (isset($_GET['act']) && $_GET['act'] =='edit') { echo $password; } ?>" name="password" class="form-control col-6" required>
 
     <button class="btn btn-lg btn-primary btn-block text-uppercase mt-4 col-2" type="submit"
     name="<?=(isset($id) ? 'edituser' : 'tambahuser')?>"> <?=(isset($id) ? 'EDIT' : 'TAMBAH')?> </button>
